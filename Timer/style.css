@@ -1,0 +1,142 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    /* background-color: #61619c; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    height: 100vh;
+}
+.countdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.countdown-item span:first-child {
+    font-size: 36px;
+    font-weight: bold;
+    color: #e8dddd;
+}
+
+.countdown-item span:last-child {
+    font-size: 16px;
+    color: #e8dddd;
+    /* margin-left: 100px; */
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color: #a49abd; */
+    background-image: url(./Background.jpg);
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.maintenance-info {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+.maintenance-info h1{
+    font-size: 50px;
+    text-align: left;
+    margin-left: 20px;
+}
+.maintenance-info p{
+    font-size: 20px;
+    text-align: left;
+    margin-left: 20px;
+
+}
+.countdown-container {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+
+.maintenance-container {
+    flex: 1;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #e8dddd;
+}
+
+.countdown {
+    flex: 1;
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff5733;
+    padding: 20px;
+    text-align: center;
+}
+.countdown h2 {
+    font-size: 24px;
+}
+p {
+    font-size: 18px;
+    color: #e8dddd;
+}
+.rocket{
+    width: 150px;
+    animation: rocket 4s linear infinite;
+    position: absolute;
+    /* right: 10%; */
+    bottom: 0;
+}
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
+/* .container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./Background.jpg);
+} */
+/* .container2{
+    display: flex;
+    backgro
+} */
