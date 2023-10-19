@@ -10,36 +10,31 @@
     <div class="container">
         <div class="form-container">
             <h2>Contact Us</h2>
-            <form>
+            <form id="contactForm">
                 <table>
                     <tr>
-                        <div id="First-Name">
                         <th>First Name</th>
-                        <td><input type="text" name="firstname" required></td>
-                        </div>
+                        <td><input type="text" id= "First" required></td>
                     </tr>
-                    <tr><div id="last-Name"></div>
+                    <tr>
                         <th>Last Name</th>
-                        <td><input type="text" name="lastname" required></td>
-                    </div>
+                        <td><input type="text" id= "last" required></td>
                     </tr>
-                    <tr><div id="email"></div>
+                    <tr>
                         <th>Email</th>
-                        <td><input type="email" name="email" required></td>
-                    </div>
+                        <td><input type="email" id="email" required></td>
                     </tr>
-                    <tr><div id="phone">
+                    <tr>
                         <th>Phone</th>
-                        <td><input type="tel" name="phone"></td>
-                    </div>
+                        <td><input type="tel" id= "phone"></td>
                     </tr>
                 </table>
-                <button type="submit">Submit</button>
+                <button id="submit">Submit</button>
             </form>
         </div>
+        <div id="successMessage" class="hidden">Thank you for your message! We'll get back to you soon.</div>
+        <div id="errorMessage" class="hidden">Please fill in all the fields correctly.</div>
     </div>
-    <div id="successMessage" class="hidden">Thank you for your message! We'll get back to you soon.</div>
-    <div id="errorMessage" class="hidden">Please fill in all the fields correctly.</div>
     <script src="script.js"></script>
 </body>
 </html>
