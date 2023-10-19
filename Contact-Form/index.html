@@ -1,22 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-   <title>Contact-form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Form</title>
 </head>
 <body>
-   <div class="container">
-     <form>
-        <h3>GET IN TOUCH</h3>
-        <input type="text" id="name" placeholder="Your name" required>
-        <input type="email" id="email" placeholder="Email id" required>
-        <input type="text" id="phone" placeholder="Phone no." required>
-        <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
-        <button type="submit">Send</button>
-
-     </form>
-   </div>
+    <div class="container">
+        <div class="form-container">
+            <h2>Contact Us</h2>
+            <form>
+                <table>
+                    <tr>
+                        <div id="First-Name">
+                        <th>First Name</th>
+                        <td><input type="text" name="firstname" required></td>
+                        </div>
+                    </tr>
+                    <tr><div id="last-Name"></div>
+                        <th>Last Name</th>
+                        <td><input type="text" name="lastname" required></td>
+                    </div>
+                    </tr>
+                    <tr><div id="email"></div>
+                        <th>Email</th>
+                        <td><input type="email" name="email" required></td>
+                    </div>
+                    </tr>
+                    <tr><div id="phone">
+                        <th>Phone</th>
+                        <td><input type="tel" name="phone"></td>
+                    </div>
+                    </tr>
+                </table>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div id="successMessage" class="hidden">Thank you for your message! We'll get back to you soon.</div>
+    <div id="errorMessage" class="hidden">Please fill in all the fields correctly.</div>
+    <script src="script.js"></script>
 </body>
 </html>
